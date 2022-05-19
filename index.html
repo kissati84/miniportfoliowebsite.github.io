@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!--REMIX ICONS-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Mini portfolio website</title>
+</head>
+<body>
+    <!--HEADER PROFILE-->
+    <header class="profile container">
+        <!--THEME BUTTON-->
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+        <div class="profile__container grid">
+            <div class="profile__data">
+                <div class="profile__border">
+                    <div class="profile__perfil">
+                        <img src="img/perfil.png" alt="">
+                    </div>
+                </div>
+
+                <h2 class="profile__name">Bodnár Zalán</h2>
+                <h3 class="profile__profession">Illusztrátor</h3>
+
+                <ul class="profile__social">
+                    <a href="https://www.instagram.com/" target="_blank" class="profile__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank" class="profile__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                    <a href="https://www.behance.net/" target="_blank" class="profile__social-link">
+                        <i class="ri-behance-line"></i>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="profile__info grid">
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">7</h3>
+                    <p class="profile__info-description">
+                        Év <br> tapasztalat
+                    </p>
+                </div>
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">+124</h3>
+                    <p class="profile__info-description">
+                        Befejezett <br> projekt
+                    </p>
+                </div>
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">96</h3>
+                    <p class="profile__info-description">
+                        Elégedett <br> ügyfél
+                    </p>
+                </div>
+            </div>
+            <div class="profile__buttons">
+                <!--INSERT CV-->
+                <a download="" href="pdf/CV.pdf" class="button">
+                    Letöltés CV <i class="ri-file-download-line"></i>
+                </a>
+
+                <div class="profile__buttons-small">
+                    <!--INSERT A REAL NUMBER PLUS COUNTRY CODE-->
+                    <a href="https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!" target="_blank" class="button button__small button__gray">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+
+                    <!--INSERT BRAND NAME OR PROFILE-->
+                    <a href="https://www.facebook.com/jdoe" target="_blank" class="button button__small button__gray">
+                        <i class="ri-messenger-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--MAIN-->
+    <main class="main">
+        <section class="filters container">
+            <!--FILTERS TABS-->
+            <ul class="filters__content">
+                <button class="filters__button filter-tab-active" data-target="#projects">
+                    Projektek
+                </button>
+
+                <button class="filters__button" data-target="#skills">
+                    Készségek
+                </button>
+            </ul>
+
+            <div class="filters__sections">
+                <!--PROJECTS-->
+                <div class="projects__content grid filters__active" data-content id="projects">
+                    <article class="projects__card">
+                        <img src="img/project1.png" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Nyomtatás</span>
+                                <h3 class="projects__title">Tapéta</h3>
+                                <a href="#" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="img/project2.png" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Web</span>
+                                <h3 class="projects__title">Webdesign</h3>
+                                <a href="#" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="img/project3.png" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Nyomtatás</span>
+                                <h3 class="projects__title">Albumborító</h3>
+                                <a href="#" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="img/project4.png" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Nyomtatás</span>
+                                <h3 class="projects__title">Gyerekkönyv</h3>
+                                <a href="#" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="img/project5.png" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Design</span>
+                                <h3 class="projects__title">Textil</h3>
+                                <a href="#" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!--SKILLS-->
+                <div class="skills__content grid" data-content id="skills">
+                    <div class="skills__area">
+                        <h3 class="skills__title">
+                            Kiadványillusztrátor
+                        </h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Illustrator</h3>
+                                        <span class="skills__level">Középhaladó</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">InDesign</h3>
+                                        <span class="skills__level">Haladó</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Canva</h3>
+                                        <span class="skills__level">Haladó</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Photoshop</h3>
+                                        <span class="skills__level">Középhaladó</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Photopea</h3>
+                                        <span class="skills__level">Haladó</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Behance</h3>
+                                        <span class="skills__level">Haladó</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__area">
+                        <h3 class="skills__title">
+                            Divatillusztrátor
+                        </h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Akvarell</h3>
+                                        <span class="skills__level">Középhaladó</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Tempera</h3>
+                                        <span class="skills__level">Haladó</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Tus</h3>
+                                        <span class="skills__level">Középhaladó</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Procreate</h3>
+                                        <span class="skills__level">Haladó</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Photoshop Sketch</h3>
+                                        <span class="skills__level">Középhaladó</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer container">
+        <span class="footer__copy">
+            &#169; 2016-2022 Minden jog fenntartva - Makay Kiberbiztonsági Kft.
+        </span>
+    </footer>
+
+    <!--SCROLLREVEAL-->
+    <script src="js/scrollreveal.min.js"></script>
+
+    <!--MAIN JS-->
+    <script src="js/main.js"></script>
+</body>
+</html>
